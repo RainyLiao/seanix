@@ -1,39 +1,39 @@
 {
-    "name": "root",
-    "private": true,
-    "workspaces": [
-        "packages/*"
-    ],
-    "scripts": {
-        "prepare": "husky install",
-        "prettier": "npx prettier '**/*' --write -u"
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "prettier": "npx prettier '**/*' --write -u"
+  },
+  "devDependencies": {
+    "@seanix/cz-emoji-lerna-changelog": "latest",
+    "@types/node": "^17.0.33",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "commitizen": "latest",
+    "eslint": "latest",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-config-airbnb-typescript": "latest",
+    "eslint-plugin-import": "latest",
+    "husky": "latest",
+    "jiti": "^1.13.0",
+    "lerna": "latest",
+    "lint-staged": "latest",
+    "prettier": "latest",
+    "typescript": "latest"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@seanix/cz-emoji-lerna-changelog"
     },
-    "devDependencies": {
-        "@seanix/cz-emoji-lerna-changelog": "latest",
-        "@types/node": "^17.0.33",
-        "@typescript-eslint/eslint-plugin": "latest",
-        "@typescript-eslint/parser": "latest",
-        "commitizen": "latest",
-        "eslint": "latest",
-        "eslint-config-airbnb-base": "latest",
-        "eslint-config-airbnb-typescript": "latest",
-        "eslint-plugin-import": "latest",
-        "husky": "latest",
-        "jiti": "^1.13.0",
-        "lerna": "latest",
-        "lint-staged": "latest",
-        "prettier": "latest",
-        "typescript": "latest"
-    },
-    "config": {
-        "commitizen": {
-            "path": "@seanix/cz-emoji-lerna-changelog"
-        },
-        "@seanix/cz-emoji": {
-            "lang": "zh-CN"
-        }
-    },
-    "lint-staged": {
-        "**/*": "prettier --write -u"
+    "@seanix/cz-emoji": {
+      "lang": "zh-CN"
     }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write -u"
+  }
 }
