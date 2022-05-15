@@ -1,0 +1,25 @@
+{
+    "name": "@seanix/changelogen",
+    "version": "1.0.0",
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "description": "Generate Beautiful Changelogs using Conventional Commits",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "bin": {
+        "changelogen": "./dist/cli.mjs"
+    },
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ]
+}
